@@ -1,0 +1,26 @@
+name: Duell
+version: '${version}'
+main: de.dasjeff.duellSystem.DuellSystem
+api-version: '1.21'
+description: 'Ein leichtgewichtiges und performantes Duell-System'
+author: DasJeff
+
+depend: [Vault]
+softdepend: [WorldGuard]
+
+commands:
+  duel:
+    description: Hauptbefehl für das Duell-System
+    usage: /duel <Spieler> [Coins]
+    aliases: [duell]
+
+permissions:
+  duel.request:
+    description: Erlaubt es, ein Duell anzufragen
+    default: true
+  duel.accept:
+    description: Erlaubt es, ein Duell anzunehmen
+    default: true
+  duel.admin:
+    description: Erlaubt Zugriff auf Admin-Befehle
+    default: op

@@ -1,0 +1,66 @@
+# Duell-System Nachrichten
+
+prefix: "&8[&cDuell&8] &7"
+
+# Allgemeine Nachrichten
+general:
+  reload: "&aDas Plugin wurde neu geladen."
+  no-permission: "&cDu hast keine Berechtigung, diesen Befehl auszuführen."
+  player-only: "&cDieser Befehl kann nur von Spielern ausgeführt werden."
+  player-not-found: "&cDer Spieler &e%player% &cwurde nicht gefunden."
+  cannot-duel-self: "&cDu kannst dich nicht selbst herausfordern."
+  already-in-duel: "&cDu bist bereits in einem Duell."
+  target-already-in-duel: "&cDer Spieler &e%player% &cist bereits in einem Duell."
+  command-blocked: "&cWährend eines Duells kannst du keine Befehle ausführen."
+  accept_usage: "&cBitte gib den Spieler an, dessen Duell-Anfrage du annehmen möchtest: /duel accept <Spieler>"
+
+# Duell-Anfrage Nachrichten
+request:
+  sent: "&aDu hast &e%player% &azu einem Duell herausgefordert."
+  sent-with-bet: "&aDu hast &e%player% &azu einem Duell mit einem Einsatz von &e%amount% Coins &aherausgefordert."
+  received: "&e%player% &ahat dich zu einem Duell herausgefordert. Nutze &e/duel accept %player% &aum anzunehmen."
+  received-with-bet: "&e%player% &ahat dich zu einem Duell mit einem Einsatz von &e%amount% Coins &aherausgefordert. Nutze &e/duel accept %player% &aum anzunehmen."
+  expired: "&cDeine Duell-Anfrage an &e%player% &cist abgelaufen."
+  no-pending-request: "&cDu hast keine ausstehende Duell-Anfrage von &e%player%&c."
+  too-far-away: "&cDu bist zu weit von &e%player% &centfernt. Maximale Entfernung: &e%distance% Blöcke&c."
+  not-enough-money: "&cDu hast nicht genug Geld für diesen Einsatz. Benötigt: &e%amount% Coins&c."
+  target-not-enough-money: "&cDer Spieler &e%player% &chat nicht genug Geld für diesen Einsatz."
+  invalid-amount: "&cUngültiger Betrag. Der Einsatz muss zwischen &e%min% &cund &e%max% Coins &cliegen."
+
+# Duell-Kampf Nachrichten
+duel:
+  accepted: "&aDu hast die Duell-Anfrage von &e%player% &aangenommen."
+  target-accepted: "&e%player% &ahat deine Duell-Anfrage angenommen."
+  countdown: "&eDas Duell beginnt in &c%seconds% &eSekunden!"
+  started: "&aDas Duell hat begonnen! Viel Glück!"
+  won: "&aDu hast das Duell gegen &e%player% &agewonnen!"
+  won-with-bet: "&aDu hast das Duell gegen &e%player% &agewonnen und &e%amount% Coins &aerhalten!"
+  lost: "&cDu hast das Duell gegen &e%player% &cverloren."
+  lost-with-bet: "&cDu hast das Duell gegen &e%player% &cverloren und &e%amount% Coins &cverloren."
+  player-left: "&e%player% &chat den Server verlassen und das Duell verloren."
+  interaction-disabled: "&cDu bist gerade in einem Duell und kannst nicht mit der Welt interagieren!"
+  
+# Titel und Untertitel
+titles:
+  countdown:
+    title: "&c%seconds%"
+    subtitle: "&eDas Duell beginnt gleich!"
+  start:
+    title: "&cKampf!"
+    subtitle: "&eDas Duell hat begonnen!"
+  win:
+    title: "&aSieg!"
+    subtitle: "&eDu hast das Duell gewonnen!"
+  lose:
+    title: "&cNiederlage!"
+    subtitle: "&eDu hast das Duell verloren!"
+
+# Usage messages for /duel command
+usage:
+  header: "&8&m----------&r &c&lDuell-Befehle &8&m----------"
+  footer: "&8&m---------------------------------------------"
+  line:
+    request: "&8» &c/duel <Spieler> &8- &7Fordere einen Spieler zu einem Duell heraus"
+    request_bet: "&8» &c/duel <Spieler> <Betrag> &8- &7Fordere einen Spieler zu einem Duell mit Wetteinsatz heraus"
+    accept: "&8» &c/duel accept <Spieler> &8- &7Nimm eine Duell-Anfrage an"
+    reload: "&8» &c/duel reload &8- &7Lade die Konfiguration neu (Admin)"

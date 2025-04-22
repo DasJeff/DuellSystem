@@ -1,0 +1,29 @@
+# Duell-System Konfiguration
+
+# Allgemeine Einstellungen
+settings:
+  # Maximale Anzahl gleichzeitiger Duelle pro Spieler
+  max-duels-per-player: 1
+  
+  # Countdown vor Kampfbeginn (in Sekunden)
+  countdown-duration: 3
+  
+  # Maximale Entfernung zwischen Spielern für Duell-Anfrage/Annahme (in Blöcken)
+  proximity-radius: 10
+  
+  # Zeitlimit für die Annahme einer Duell-Anfrage (in Sekunden)
+  request-timeout: 30
+
+# Wirtschafts-Einstellungen
+economy:
+  # Minimaler Wetteinsatz (in Coins)
+  min-bet: 10
+  
+  # Maximaler Wetteinsatz (in Coins)
+  max-bet: 10000
+  
+  # Ob Spieler mit negativem Kontostand Duelle anfragen können
+  allow-negative-balance: false
+
+# Debug-Modus (für Entwickler)
+debug: false
